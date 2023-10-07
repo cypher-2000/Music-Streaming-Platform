@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="register.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming Platform</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <h1>Music Streaming Platform</h1>
+    </header>
+
+    <section class="song-registration">
+        <h2>Register a Song</h2>
+        <form id="song-registration-form">
+            <div class="form-group">
+                <label for="artist">Artist:</label>
+                <input type="text" id="artist" name="artist" required>
+            </div>
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price (ETH):</label>
+                <input type="number" id="price" name="price" step="0.01" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section class="navigation">
+        <a href="songlist.html">View Song List</a>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

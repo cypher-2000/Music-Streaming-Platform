@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming Platform</title>
+    <link rel="stylesheet" href="songlist.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Music Streaming Platform</h1>
+    </header>
+
+    <section class="container song-registration">
+        <h2 class="section-title">Register a Song</h2>
+        <form id="song-registration-form" class="form">
+            <div class="form-group">
+                <label for="artist" class="label">Artist:</label>
+                <input type="text" id="artist" name="artist" class="input" required>
+            </div>
+            <div class="form-group">
+                <label for="title" class="label">Title:</label>
+                <input type="text" id="title" name="title" class="input" required>
+            </div>
+            <div class="form-group">
+                <label for="price" class="label">Price (ETH):</label>
+                <input type="number" id="price" name="price" step="0.01" class="input" required>
+            </div>
+            <button type="submit" class="button">Register</button>
+        </form>
+    </section>
+
+    <section class="container song-list">
+        <h2 class="section-title">Song List</h2>
+        <ul id="song-list" class="list">
+            <!-- Sample songs -->
+            <li class="list-item">
+                <h3 class="list-title">Chaleya</h3>
+                <p class="list-info">Artist: Arijit singh </p>
+                <p class="list-info">Price: 0.05 ETH</p>
+                <button class="list-button" onclick="playSong('Chaleya')">Play</button>
+            </li>
+            <li class="list-item">
+                <h3 class="list-title">August</h3>
+                <p class="list-info">Artist: Taylor Swift</p>
+                <p class="list-info">Price: 0.04 ETH</p>
+                <button class="list-button" onclick="playSong('August')">Play</button>
+            </li>
+            <!-- You can add more songs here -->
+        </ul>
+    </section>
+
+    <script src="app.js"></script>
+   
+</body>
+</html>
